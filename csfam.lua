@@ -101,6 +101,8 @@ getgenv().ConfigsKaitun = {
 	},
 	
 	Events = {
+		Dino = true,
+
 		["Traveling Shop"] = {
 			"Bald Eagle",
 			"Night Staff",
@@ -156,8 +158,8 @@ getgenv().ConfigsKaitun = {
 			"Zen Egg",
 			"Primal Egg",
 			"Night Egg",
-			"Bug Egg",
 			"Anti Bee Egg",
+			"Bug Egg",
 			"Dinosaur Egg",
 			"Oasis Egg",
 			"Paradise Egg",
@@ -218,6 +220,7 @@ getgenv().ConfigsKaitun = {
 			"Brontosaurus",
 			"Spinosaurus",
 			"Ankylosaurus",
+			"Dilophosaurus",
 			"Kitsune",
 			"Kappa",
 			["Kappa"] = 5,
