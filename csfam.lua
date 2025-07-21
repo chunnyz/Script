@@ -101,8 +101,6 @@ getgenv().ConfigsKaitun = {
 	},
 	
 	Events = {
-		Dino = true,
-
 		["Traveling Shop"] = {
 			"Bald Eagle",
 			"Night Staff",
@@ -133,7 +131,9 @@ getgenv().ConfigsKaitun = {
 			--"Koi",
 			--"Spiked Mango",
 			"Pet Shard Tranquil",
-		}
+		},
+		Restocks_limit = 5000000,
+		MinimumChi = 10
 	},
 	
 	Gear = {
@@ -198,7 +198,7 @@ getgenv().ConfigsKaitun = {
 			["Pet"] = {
 				"Starfish",
 			},
-			["Limit Upgrade"] = 3,
+			["Limit Upgrade"] = 4,
 			["Equip When Done"] = {
 				"Capybara",
 				"Dilophosaurus",
@@ -235,7 +235,7 @@ getgenv().ConfigsKaitun = {
 			["Scarlet Macaw"] = 5,
 			["Dilophosaurus"] = 5,
 		},
-		LockPet_Weight = 5, -- if Weight >= 7 they will locked,
+		LockPet_Weight = 6, -- if Weight >= 7 they will locked,
 		Instant_Sell = {
 
 		}
