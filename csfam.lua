@@ -237,8 +237,10 @@ getgenv().ConfigsKaitun = {
 		},
 		LockPet_Weight = 6, -- if Weight >= 7 they will locked,
 		Instant_Sell = {
-
-		}
+			"Shiba Inu",
+			"Dog",
+			"Golden Lab",
+		},
 	},
 
 	Webhook = {
