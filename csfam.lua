@@ -87,7 +87,6 @@ getgenv().ConfigsKaitun = {
 				"Pink Lily",
 				"Purple Dahlia",
 				"Honeysuckle",
-				"Bone Blossom",
 				"Fossilight",
 				"Maple Apple"
 			}
@@ -132,8 +131,8 @@ getgenv().ConfigsKaitun = {
 			--"Spiked Mango",
 			"Pet Shard Tranquil",
 		},
-		Restocks_limit = 5000000,
-		MinimumChi = 10
+		Restocks_limit = 8000000,
+		MinimumChi = 29
 	},
 	
 	Gear = {
