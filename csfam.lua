@@ -223,6 +223,8 @@ getgenv().ConfigsKaitun = {
 			"Dilophosaurus",
 			"Kitsune",
 			"Kappa",
+			"Capybara",
+			"Moth",
 			["Kappa"] = 5,
 			["Bald Eagle"] = 5,
 			["Moon Cat"] = 10,
