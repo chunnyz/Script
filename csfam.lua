@@ -1,9 +1,10 @@
 setfpscap(5)
 getgenv().ConfigsKaitun = {
-	["Low Cpu"] = true,
+	["Stack Plant"] = true,
 
-	["Rejoin When Update"] = false,
+	["Low Cpu"] = true,
 	
+	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
 		["Limit"] = 300,
 		["Destroy Untill"] = 300,
@@ -195,14 +196,14 @@ getgenv().ConfigsKaitun = {
 		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				"Starfish",
+				["Starfish"] = { 5, 100 },
 			},
 			["Limit Upgrade"] = 4,
 			["Equip When Done"] = {
-				"Capybara",
-				"Dilophosaurus",
-				"Ostrich",
-				"Starfish",
+				["Capybara"] = { 1, 70 },
+				["Dilophosaurus"] = { 1, 70 },
+				["Ostrich"] = { 1, 70 },
+				["Starfish"] = { 1, 70 },
 			},
 		},
 		Locked = {
@@ -236,6 +237,7 @@ getgenv().ConfigsKaitun = {
 		},
 		LockPet_Weight = 6, -- if Weight >= 7 they will locked,
 		Instant_Sell = {
+			"Bunny",
 			"Shiba Inu",
 			"Dog",
 			"Golden Lab",
