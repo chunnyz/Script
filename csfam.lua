@@ -207,6 +207,7 @@ getgenv().ConfigsKaitun = {
 			},
 		},
 		Locked = {
+			"Kitsune",
 			"Disco Bee",
 			"Butterfly",
 			"Mimic Octopus",
@@ -221,7 +222,6 @@ getgenv().ConfigsKaitun = {
 			"Spinosaurus",
 			"Ankylosaurus",
 			"Dilophosaurus",
-			"Kitsune",
 			"Kappa",
 			"Capybara",
 			"Moth",
@@ -239,10 +239,10 @@ getgenv().ConfigsKaitun = {
 		},
 		LockPet_Weight = 5, -- if Weight >= 7 they will locked,
 		Instant_Sell = {
-			--"Bunny",
+			"Bunny",
 			"Shiba Inu",
 			"Dog",
-			--"Golden Lab",
+			"Golden Lab",
 		},
 	},
 
