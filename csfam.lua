@@ -206,7 +206,7 @@ getgenv().ConfigsKaitun = {
 			"Fennec Fox",
 			"Bald Eagle",
 			"T-Rex",
-            "Koi",
+			"Koi",
 			"Brontosaurus",
 			"Spinosaurus",
 			"Ankylosaurus",
