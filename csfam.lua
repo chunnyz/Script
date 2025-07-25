@@ -1,13 +1,13 @@
-setfpscap(5)
+setfpscap(3)
+task.wait(10)
 getgenv().ConfigsKaitun = {
-	["Stack Plant"] = true,
-
 	["Low Cpu"] = true,
-	
+
 	["Rejoin When Update"] = false,
+	
 	["Limit Tree"] = {
-		["Limit"] = 300,
-		["Destroy Untill"] = 300,
+		["Limit"] = 250,
+		["Destroy Untill"] = 200,
 		
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -19,7 +19,7 @@ getgenv().ConfigsKaitun = {
 
 	Seed = {
 		Buy = {
-			Mode = "Custom", -- Custom , Auto
+			Mode = "Auto", -- Custom , Auto
 			Custom = {
 				"Tomato",
 				"Bamboo",
@@ -87,9 +87,7 @@ getgenv().ConfigsKaitun = {
 				"Dragon Pepper",
 				"Pink Lily",
 				"Purple Dahlia",
-				"Honeysuckle",
-				"Fossilight",
-				"Maple Apple"
+				"Honeysuckle"
 			}
 		}
 	},
@@ -118,30 +116,31 @@ getgenv().ConfigsKaitun = {
 		},
 		Shop = {
 			--"Traveler's Fruit",
-			"Summer Seed Pack",
-			"Flower Seed Pack",
+			--"Summer Seed Pack",
+			--"Flower Seed Pack",
 			--"Hamster",
-			"Oasis Egg",
+			--"Oasis Egg",
 			--"Delphinium",
 			--"Lily of the Valley",
-			"Zen Seed Pack",
+			--"Zen Seed Pack",
 			"Zen Egg",
 			--"Zenflare",
 			--"Soft Sunshine",
-			--"Koi",
+			"Koi",
 			--"Spiked Mango",
-			"Pet Shard Tranquil",
+			--"Pet Shard Tranquil",
 		},
-		Restocks_limit = 8000000,
-		MinimumChi = 29
+		Restocks_limit = 50000000000,
+		MinimumChi = 10
 	},
+
 	
 	Gear = {
 		Buy = { 
 			"Master Sprinkler",
 			"Godly Sprinkler",
 			"Advanced Sprinkler",
-            "Basic Sprinkler",
+            		"Basic Sprinkler",
 			"Lightning Rod",
 			"Medium Toy",
 			"Medium Treat",
@@ -158,19 +157,12 @@ getgenv().ConfigsKaitun = {
 			"Zen Egg",
 			"Primal Egg",
 			"Night Egg",
-			"Anti Bee Egg",
 			"Bug Egg",
+			"Anti Bee Egg",
 			"Dinosaur Egg",
 			"Oasis Egg",
 			"Paradise Egg",
-			"Mythical Egg",
-			"Legendary Egg",
-			"Bee Egg",
-			"Rare Summer Egg",
-			"Common Summer Egg",
-			"Rare Egg",
-			"Uncommon Egg",
-			"Common Egg",
+
 		},
 		Buy = {
 			"Zen Egg",
@@ -181,14 +173,6 @@ getgenv().ConfigsKaitun = {
 			"Dinosaur Egg",
 			"Oasis Egg",
 			"Paradise Egg",
-			"Mythical Egg",
-			"Legendary Egg",
-			"Bee Egg",
-			"Rare Summer Egg",
-			"Common Summer Egg",
-			"Rare Egg",
-			"Uncommon Egg",
-			"Common Egg"
 		}
 	},
 	
@@ -196,18 +180,22 @@ getgenv().ConfigsKaitun = {
 		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				["Starfish"] = { 6, 100 },
+				"Starfish",
+                "Petal Bee",
+                "Bee",
 			},
-			["Limit Upgrade"] = 4,
+			["Limit Upgrade"] = 8,
 			["Equip When Done"] = {
-				["Capybara"] = { 6, 70 },
-				["Dilophosaurus"] = { 6, 70 },
-				["Ostrich"] = { 6, 70 },
-				["Starfish"] = { 6, 70 },
+				"Capybara",
+				"Dilophosaurus",
+				"Ostrich",
+				"Starfish",
+                		"Petal Bee",
+                		"Bee",
+                		"Honey Bee",
 			},
 		},
 		Locked = {
-			"Kitsune",
 			"Disco Bee",
 			"Butterfly",
 			"Mimic Octopus",
@@ -218,13 +206,13 @@ getgenv().ConfigsKaitun = {
 			"Fennec Fox",
 			"Bald Eagle",
 			"T-Rex",
+            "Koi",
 			"Brontosaurus",
 			"Spinosaurus",
 			"Ankylosaurus",
-			"Dilophosaurus",
+			"Kitsune",
 			"Kappa",
 			"Capybara",
-			"Moth",
 			["Kappa"] = 5,
 			["Bald Eagle"] = 5,
 			["Moon Cat"] = 10,
@@ -237,13 +225,13 @@ getgenv().ConfigsKaitun = {
 			["Scarlet Macaw"] = 5,
 			["Dilophosaurus"] = 5,
 		},
-		LockPet_Weight = 5, -- if Weight >= 7 they will locked,
+		LockPet_Weight = 7, -- if Weight >= 7 they will locked,
 		Instant_Sell = {
-			"Bunny",
+			--"Bunny",
 			"Shiba Inu",
-			"Dog",
-			"Golden Lab",
-		},
+			--"Dog",
+			--"Golden Lab",
+		}
 	},
 
 	Webhook = {
@@ -268,5 +256,4 @@ getgenv().ConfigsKaitun = {
 	},
 }
 License = "287MIU1KAqEbt6zgPcB9hUvDHbJPDz48"
-
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
