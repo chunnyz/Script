@@ -181,8 +181,8 @@ getgenv().ConfigsKaitun = {
 		["Upgrade Slot"] = {
 			["Pet"] = {
 				"Starfish",
-                "Petal Bee",
-                "Bee",
+                		"Petal Bee",
+                		"Bee",
 			},
 			["Limit Upgrade"] = 8,
 			["Equip When Done"] = {
