@@ -70,6 +70,7 @@ getgenv().ConfigsKaitun = {
 				"Moon Mango",
 				"Bone Blossom",
 				"Fossilight",
+				"Tranquil Bloom",
 			}
 		}
 	},
@@ -83,14 +84,14 @@ getgenv().ConfigsKaitun = {
 	Events = {
 		["Zen Event"] = {
 			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 3_000_000_000_000,
-				Minimum_Money = 1,
+				Max_Restocks_Price = 10_000_000_000,
+				Minimum_Money = 5_000_000,
 				Minimum_Chi = 30
 			},
 			["Doing"] = {
-				Minimum_Money = 1, -- minimum money to start play this event
-				First_Upgrade_Tree = 1,
-				Maximum_Chi = 50,
+				Minimum_Money = 100_000, -- minimum money to start play this event
+				First_Upgrade_Tree = 7,
+				Maximum_Chi = 400,
 			}
 		},
 		["Traveling Shop"] = {
@@ -140,6 +141,7 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Zen Egg",
+			"Corrupted Zen Egg",
 			--"Primal Egg",
 			--"Night Egg",
 			--"Bug Egg",
@@ -164,23 +166,25 @@ getgenv().ConfigsKaitun = {
 	},
 
 	Pets = {
-		["Start Delete Pet At"] = 50,
+		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				["Starfish"] = { 8, 100, 1 },
+				["Starfish"] = { 8, 75, 1 },
 			},
-			["Limit Upgrade"] = 8,
+			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				["Tanchozuru"] = { 5, 100, 1 },
-				["Ostrich"] = { 3, 100, 2 },
+				["Tarantula Hawk"] = { 2, 101, 1 },
+				["Blood Kiwi"] = { 4, 101, 2 },
+				["Rooster"] = { 2, 101, 3 },
+				["Starfish"] = { 8, 75, 4 },
 			},
 		},
 		Locked_Pet_Age = 50, -- pet that age > 60 will lock
 		Locked = {
+			"Corrupted Kitsune",
 			"Kitsune",
 			"Kappa",
 			"Tanchozuru",
-			"Tanuki",
 			"Disco Bee",
 			"Butterfly",
 			"Queen Bee",
@@ -194,20 +198,24 @@ getgenv().ConfigsKaitun = {
 			"Ankylosaurus",
 			"Spinosaurus",
 			"T-Rex",
-			["Seagull"] = 5,
-			["Shiba Inu"] = 5,
-			["Nihonzaru"] = 5,
-			["Stegosaurus"] = 5,
-			["Peacock"] = 5,
-			["Triceratops"] = 5,
-			["Pterodactyl"] = 2,
-			["Toucan"] = 5,
+			"Mizuchi",
+			"Raiju",
+			["Blood Kiwi"] = 4,
+			["Tarantula Hawk"] = 2,
+			["Bald Eagle"] = 5,
+			["Moon Cat"] = 10,
+			["Chicken"] = 2,
+			["Rooster"] = 2,
+			["Blood Kiwi"] = 5,
+			["Ostrich"] = 5,
+			["Kappa"] = 5,
 			["Capybara"] = 5,
-			["Bunny"] = 5,
-			["Golden Lab"] = 5,
+			["Praying Mantis"] = 5,
+			["Starfish"] = 10,
+			["Nihonzaru"] = 5,
+			["Triceratops"] = 5,
+			["Capybara"] = 5,
 			["Bee"] = 3,
-			["Bunny"] = 5,
-			["Golden Lab"] = 5,
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked,
 		Instant_Sell = {		
