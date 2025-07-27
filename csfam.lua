@@ -1,16 +1,15 @@
--- Update config : 26/7/2025 time : 07:26:42
+-- Update config : 28/7/2025
 setfpscap(3)
 task.wait(10)
 getgenv().ConfigsKaitun = {
 	["Block Pet Gift"] = true,
 	
 	["Low Cpu"] = true,
-	["Auto Rejoin"] = true,
 	
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
 		["Limit"] = 300,
-		["Destroy Untill"] = 300,
+		["Destroy Untill"] = 280,
 
 		["Safe Tree"] = {
 			"Maple Apple",
@@ -100,32 +99,28 @@ getgenv().ConfigsKaitun = {
 			"Bee Egg"
 		},
 		Craft = {
+			"Anti Bee Egg",
 			"Primal Egg",
 			--"Ancient Seed Pack",
-			"Anti Bee Egg",
 			--"Honeysuckle",
 			"Small Treat",
 			"Small Toy",
 			"Lightning Rod"
 		},
 		Shop = {
-			--"Traveler's Fruit",
-			--"Summer Seed Pack",
-			--"Flower Seed Pack",
-			--"Hamster",
-			--"Oasis Egg",
-			--"Delphinium",
-			--"Lily of the Valley",
-			--"Zen Seed Pack",
 			"Zen Egg",
-			--"Zenflare",
-			--"Soft Sunshine",
-			--"Koi",
+			--"Zen Seed Pack",
 			--"Spiked Mango",
 			--"Pet Shard Tranquil",
+			--"Pet Shard Corrupted",
+			--"Koi",
+			--"Soft Sunshine",
+			--"Sakura Bush",
+			"Raiju",
 		},
+		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
-	
+
 	Gear = {
 		Buy = { 
 			"Master Sprinkler",
@@ -138,20 +133,30 @@ getgenv().ConfigsKaitun = {
 			"Level Up Lollipop",
 			"Tanning Mirror"
 		},
+		Lock = {
+			"Master Sprinkler",
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
+			"Lightning Rod",
+		},
 	},
 
 	Eggs = {
 		Place = {
 			"Zen Egg",
-			"Corrupted Zen Egg",
-			--"Primal Egg",
-			--"Night Egg",
-			"Bug Egg",
+			"Primal Egg",
 			"Anti Bee Egg",
-			--"Dinosaur Egg",
-			--"Oasis Egg",
+			"Corrupted Zen Egg",
+			"Dinosaur Egg",
+			"Oasis Egg",
+			"Night Egg",
+			"Bug Egg",
 			"Paradise Egg",
-			"Common Summer Egg",
+			"Bee Egg",
+			"Rare Summer Egg",
+			"Mythical Egg",
+			"Common Egg",
 		},
 		Buy = {
 			"Anti Bee Egg",
@@ -202,6 +207,7 @@ getgenv().ConfigsKaitun = {
 			"T-Rex",
 			"Mizuchi",
 			"Raiju",
+			"Corrupted Kodama",
 			["Tarantula Hawk"] = 2,
 			["Bald Eagle"] = 5,
 			["Moon Cat"] = 10,
