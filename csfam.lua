@@ -1,6 +1,6 @@
--- Update config : 28/7/2025
+-- Update config : 29/7/2025
 setfpscap(3)
-task.wait(10)
+task.wait(5)
 getgenv().ConfigsKaitun = {
 	["Block Pet Gift"] = true,
 	
@@ -123,7 +123,7 @@ getgenv().ConfigsKaitun = {
 			--"Koi",
 			--"Soft Sunshine",
 			--"Sakura Bush",
-			"Raiju",
+			--"Raiju",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
