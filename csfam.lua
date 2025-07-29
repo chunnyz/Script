@@ -1,4 +1,4 @@
--- Update config : 29/7/2025
+-- Update config : 29/7/2025 12.45
 setfpscap(3)
 task.wait(5)
 getgenv().ConfigsKaitun = {
