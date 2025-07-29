@@ -1,4 +1,4 @@
--- Update config : 29/7/2025 12.45
+-- Update config : 30/7/2025
 setfpscap(3)
 task.wait(5)
 getgenv().ConfigsKaitun = {
@@ -90,13 +90,13 @@ getgenv().ConfigsKaitun = {
 	Events = {
 		["Zen Event"] = {
 			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 800_000_000,
+				Max_Restocks_Price = 1_000_000_000,
 				Minimum_Money = 10_000_000,
 				Minimum_Chi = 30
 			},
 			["Doing"] = {
 				Minimum_Money = 100_000, -- minimum money to start play this event
-				First_Upgrade_Tree = 4,
+				First_Upgrade_Tree = 1,
 				Maximum_Chi = 400,
 			}
 		},
@@ -108,7 +108,7 @@ getgenv().ConfigsKaitun = {
 		Craft = {
 			"Anti Bee Egg",
 			"Primal Egg",
-			--"Ancient Seed Pack",
+			"Ancient Seed Pack",
 			--"Honeysuckle",
 			"Small Treat",
 			"Small Toy",
@@ -118,27 +118,35 @@ getgenv().ConfigsKaitun = {
 			"Zen Egg",
 			--"Zen Seed Pack",
 			--"Spiked Mango",
-			--"Pet Shard Tranquil",
-			--"Pet Shard Corrupted",
+			"Pet Shard Tranquil",
+			"Pet Shard Corrupted",
 			--"Koi",
 			--"Soft Sunshine",
 			--"Sakura Bush",
 			--"Raiju",
 		},
-		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
+		Start_Do_Honey = 1_000_000 -- start trade fruit for honey at money
 	},
 
 	Gear = {
 		Buy = { 
+			"Watering Can",
+			"Trowel",
+			"Recall Wrench",
+			"Magnifying Glass",
+			"Tanning Mirror",
+			"Cleaning Spray",
+			"Favorite Tool",
+			"Harvest Tool",
+			"Friendship Pot",
 			"Master Sprinkler",
+			"Basic Sprinkler",
 			"Godly Sprinkler",
 			"Advanced Sprinkler",
-			"Basic Sprinkler",
-			--"Lightning Rod",
 			"Medium Toy",
 			"Medium Treat",
-			"Level Up Lollipop",
-			"Tanning Mirror"
+			"Levelup Lollipop",
+			"Lightning Rod",
 		},
 		Lock = {
 			"Master Sprinkler",
@@ -152,18 +160,19 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Zen Egg",
-			"Primal Egg",
+			--"Primal Egg",
 			"Anti Bee Egg",
 			"Corrupted Zen Egg",
-			"Dinosaur Egg",
-			"Oasis Egg",
-			"Night Egg",
+			--"Dinosaur Egg",
+			--"Oasis Egg",
+			--"Night Egg",
 			"Bug Egg",
 			"Paradise Egg",
-			"Bee Egg",
-			"Rare Summer Egg",
-			"Mythical Egg",
-			"Common Egg",
+			--"Bee Egg",
+			--"Rare Summer Egg",
+			"Common Summer Egg",
+			--"Mythical Egg",
+			--"Common Egg",
 		},
 		Buy = {
 			"Anti Bee Egg",
@@ -180,17 +189,16 @@ getgenv().ConfigsKaitun = {
 	},
 
 	Pets = {
-		["Start Delete Pet At"] = 40,
+		["Start Delete Pet At"] = 50,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				["Starfish"] = { 8, 75, 1 },
+				["Kodama"] = { 8, 100, 1 },
+				["Starfish"] = { 8, 100, 1 },
 			},
 			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				["Tarantula Hawk"] = { 2, 101, 1 },
-				["Blood Kiwi"] = { 4, 101, 2 },
-				["Rooster"] = { 2, 101, 3 },
-				["Starfish"] = { 8, 75, 4 },
+				["Tanchozuru"] = { 5, 100, 1 },
+				["Ostrich"] = { 3, 100, 2 },
 			},
 		},
 		Locked_Pet_Age = 50, -- pet that age > 60 will lock
@@ -247,7 +255,12 @@ getgenv().ConfigsKaitun = {
 
 		Noti = {
 			Seeds = {
-				"Idk"
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
+				"Bone Blossom",
+				"Dragon Sapling",
+                "Maple Apple",
 			},
 			SeedPack = {
 				"Idk"
