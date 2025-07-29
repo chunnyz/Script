@@ -8,8 +8,8 @@ getgenv().ConfigsKaitun = {
 	
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 300,
-		["Destroy Untill"] = 280,
+		["Limit"] = 250,
+		["Destroy Untill"] = 220,
 
 		["Safe Tree"] = {
 			"Maple Apple",
@@ -90,13 +90,13 @@ getgenv().ConfigsKaitun = {
 	Events = {
 		["Zen Event"] = {
 			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 10_000_000_000,
-				Minimum_Money = 5_000_000,
+				Max_Restocks_Price = 800_000_000,
+				Minimum_Money = 10_000_000,
 				Minimum_Chi = 30
 			},
 			["Doing"] = {
 				Minimum_Money = 100_000, -- minimum money to start play this event
-				First_Upgrade_Tree = 1,
+				First_Upgrade_Tree = 4,
 				Maximum_Chi = 400,
 			}
 		},
@@ -215,6 +215,7 @@ getgenv().ConfigsKaitun = {
 			"Mizuchi",
 			"Raiju",
 			"Corrupted Kodama",
+			"Moth",
 			["Tarantula Hawk"] = 2,
 			["Bald Eagle"] = 5,
 			["Moon Cat"] = 10,
