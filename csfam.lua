@@ -9,7 +9,7 @@ getgenv().ConfigsKaitun = {
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
 		["Limit"] = 250,
-		["Destroy Untill"] = 220,
+		["Destroy Untill"] = 230,
 
 		["Safe Tree"] = {
 			"Maple Apple",
@@ -23,12 +23,12 @@ getgenv().ConfigsKaitun = {
 			"Fossilight",
 
 			-- locked fruit for zen event
-			["Tomato"] = 1, ["Strawberry"] = 1, ["Blueberry"] = 1,
-			["Orange Tulip"] = 1, ["Corn"] = 1, ["Daffodil"] = 1,
-			["Bamboo"] = 1, ["Apple"] = 1, ["Coconut"] = 1,
-			["Pumpkin"] = 1, ["Watermelon"] = 1, ["Cactus"] = 1,
-			["Dragon Fruit"] = 1, ["Mango"] = 1, ["Grape"] = 1,
-			["Mushroom"] = 1, ["Pepper"] = 1, ["Cacao"] = 1
+			["Tomato"] = 5, ["Strawberry"] = 5, ["Blueberry"] = 5,
+			["Orange Tulip"] = 5, ["Corn"] = 5, ["Daffodil"] = 5,
+			["Bamboo"] = 5, ["Apple"] = 5, ["Coconut"] = 5,
+			["Pumpkin"] = 5, ["Watermelon"] = 5, ["Cactus"] = 5,
+			["Dragon Fruit"] = 5, ["Mango"] = 5, ["Grape"] = 5,
+			["Mushroom"] = 5, ["Pepper"] = 5, ["Cacao"] = 5
 		}
 	},
 	Seed = {
