@@ -96,7 +96,7 @@ getgenv().ConfigsKaitun = {
 			},
 			["Doing"] = {
 				Minimum_Money = 100_000, -- minimum money to start play this event
-				First_Upgrade_Tree = 1,
+				First_Upgrade_Tree = 7,
 				Maximum_Chi = 400,
 			}
 		},
@@ -123,7 +123,7 @@ getgenv().ConfigsKaitun = {
 			--"Koi",
 			--"Soft Sunshine",
 			--"Sakura Bush",
-			--"Raiju",
+			"Raiju",
 		},
 		Start_Do_Honey = 1_000_000 -- start trade fruit for honey at money
 	},
