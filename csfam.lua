@@ -1,11 +1,15 @@
--- Update config : 30/7/2025
+-- Update config : 3/8/2025
 setfpscap(3)
 task.wait(5)
 getgenv().ConfigsKaitun = {
 	["Block Pet Gift"] = true,
-	
+
+	Collect_Cooldown = 60, -- cooldown to collect fruit
+	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
+
 	["Low Cpu"] = true,
-	
+	["Auto Rejoin"] = true,
+
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
 		["Limit"] = 250,
@@ -21,14 +25,8 @@ getgenv().ConfigsKaitun = {
 			"Moon Mango",
 			"Bone Blossom",
 			"Fossilight",
-
-			-- locked fruit for zen event
-			["Tomato"] = 5, ["Strawberry"] = 5, ["Blueberry"] = 5,
-			["Orange Tulip"] = 5, ["Corn"] = 5, ["Daffodil"] = 5,
-			["Bamboo"] = 5, ["Apple"] = 5, ["Coconut"] = 5,
-			["Pumpkin"] = 5, ["Watermelon"] = 5, ["Cactus"] = 5,
-			["Dragon Fruit"] = 5, ["Mango"] = 5, ["Grape"] = 5,
-			["Mushroom"] = 5, ["Pepper"] = 5, ["Cacao"] = 5
+			"Tranquil Bloom",
+			"Grand Tomato",
 		}
 	},
 	Seed = {
@@ -77,6 +75,7 @@ getgenv().ConfigsKaitun = {
 				"Bone Blossom",
 				"Fossilight",
 				"Tranquil Bloom",
+				"Grand Tomato",
 			}
 		}
 	},
@@ -88,18 +87,27 @@ getgenv().ConfigsKaitun = {
 	},
 
 	Events = {
+		["Cook Event"] = {
+			Minimum_Money = 30_000_000, -- minimum money to start play this event
+		},
 		["Zen Event"] = {
 			["Restocking"] = { -- Minimumthing to restock
 				Max_Restocks_Price = 1_000_000_000,
-				Minimum_Money = 10_000_000,
-				Minimum_Chi = 30
+				Minimum_Money = 1_000_000,
+				Minimum_Chi = 100
 			},
 			["Doing"] = {
-				Minimum_Money = 100_000, -- minimum money to start play this event
-				First_Upgrade_Tree = 7,
-				Maximum_Chi = 400,
+				Minimum_Money = 1_000_000, -- minimum money to start play this event
+				First_Upgrade_Tree = 4,
+				Maximum_Chi = 250,
+
+				-- // thing to skip doing
+				Skip_Fox = false, -- Skip The Middle Fox Trade (Corrupted Kitsune)
+				Skip_Corrupted_OldMan = false, -- Skip The OldMan Trade (Kodama)
+				-- If u need to skip Tranquill OldMan Set "First Upgrade Tree" To 0 and Max Chi To 99999
 			}
 		},
+
 		["Traveling Shop"] = {
 			"Bald Eagle",
 			"Star Caller",
@@ -109,20 +117,12 @@ getgenv().ConfigsKaitun = {
 			"Anti Bee Egg",
 			"Primal Egg",
 			"Ancient Seed Pack",
-			--"Honeysuckle",
 			"Small Treat",
 			"Small Toy",
 			"Lightning Rod"
 		},
 		Shop = {
 			"Zen Egg",
-			--"Zen Seed Pack",
-			--"Spiked Mango",
-			"Pet Shard Tranquil",
-			"Pet Shard Corrupted",
-			--"Koi",
-			--"Soft Sunshine",
-			--"Sakura Bush",
 			"Raiju",
 		},
 		Start_Do_Honey = 1_000_000 -- start trade fruit for honey at money
@@ -159,20 +159,20 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
+			"Gourmet Egg",
 			"Zen Egg",
-			--"Primal Egg",
+			"Primal Egg",
 			"Anti Bee Egg",
 			"Corrupted Zen Egg",
-			--"Dinosaur Egg",
-			--"Oasis Egg",
-			--"Night Egg",
+			"Dinosaur Egg",
+			"Oasis Egg",
+			"Night Egg",
 			"Bug Egg",
 			"Paradise Egg",
-			--"Bee Egg",
-			--"Rare Summer Egg",
-			"Common Summer Egg",
-			--"Mythical Egg",
-			--"Common Egg",
+			"Bee Egg",
+			"Rare Summer Egg",
+			"Mythical Egg",
+			"Common Egg",
 		},
 		Buy = {
 			"Anti Bee Egg",
@@ -201,8 +201,11 @@ getgenv().ConfigsKaitun = {
 				["Ostrich"] = { 3, 100, 2 },
 			},
 		},
+		Favorite_LockedPet = true,
 		Locked_Pet_Age = 50, -- pet that age > 60 will lock
 		Locked = {
+			"French Fry Ferret",
+			"Spaghetti Sloth",
 			"Corrupted Kitsune",
 			"Kitsune",
 			"Kappa",
@@ -240,12 +243,12 @@ getgenv().ConfigsKaitun = {
 			["Bee"] = 3,
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked,
-		Instant_Sell = {		
+		--Instant_Sell = {		
 			--"Bunny",
-			"Shiba Inu",
+			--"Shiba Inu",
 			--"Dog",
 			--"Golden Lab",
-		}
+		--}
 	},
 
 	Webhook = {
@@ -255,18 +258,15 @@ getgenv().ConfigsKaitun = {
 
 		Noti = {
 			Seeds = {
-				"Sunflower",
-				"Dragon Pepper",
-				"Elephant Ears",
-				"Bone Blossom",
-				"Dragon Sapling",
-                "Maple Apple",
+				"Idk"
 			},
 			SeedPack = {
 				"Idk"
 			},
 			Pets = {
 				"Kitsune",
+				"French Fry Ferret",
+				"Spaghetti Sloth",
 			},
 			Pet_Weight_Noti = true,
 		}
