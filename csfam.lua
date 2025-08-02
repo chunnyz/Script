@@ -240,6 +240,7 @@ getgenv().ConfigsKaitun = {
 			"Raiju",
 			"Corrupted Kodama",
 			"Moth",
+			["Mochi Mouse"] = 3,
 			["Tarantula Hawk"] = 2,
 			["Bald Eagle"] = 5,
 			["Moon Cat"] = 10,
