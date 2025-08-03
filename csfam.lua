@@ -105,7 +105,7 @@ getgenv().ConfigsKaitun = {
 		},
 		["Zen Event"] = {
 			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 3_000_000_000_000,
+				Max_Restocks_Price = 1_500_000_000_000,
 				Minimum_Money = 1_000_000,
 				Minimum_Chi = 20
 			},
@@ -240,6 +240,8 @@ getgenv().ConfigsKaitun = {
 			"Raiju",
 			"Corrupted Kodama",
 			"Moth",
+			["Sushi Bear"] = 3,
+			["Pancake Mole"] = 3,
 			["Mochi Mouse"] = 3,
 			["Tarantula Hawk"] = 2,
 			["Bald Eagle"] = 5,
@@ -257,9 +259,9 @@ getgenv().ConfigsKaitun = {
 			["Bee"] = 3,
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked,
-		--Instant_Sell = {		
+		Instant_Sell = {		
 			--"Bunny",
-			--"Shiba Inu",
+			"Shiba Inu",
 			--"Dog",
 			--"Golden Lab",
 		--}
