@@ -101,18 +101,18 @@ getgenv().ConfigsKaitun = {
 
 	Events = {
 		["Cook Event"] = {
-			Minimum_Money = 30_000_000, -- minimum money to start play this event
+			Minimum_Money = 1_000_000, -- minimum money to start play this event
 		},
 		["Zen Event"] = {
 			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 1_000_000_000,
+				Max_Restocks_Price = 3_000_000_000_000,
 				Minimum_Money = 1_000_000,
-				Minimum_Chi = 100
+				Minimum_Chi = 20
 			},
 			["Doing"] = {
 				Minimum_Money = 1_000_000, -- minimum money to start play this event
-				First_Upgrade_Tree = 4,
-				Maximum_Chi = 250,
+				First_Upgrade_Tree = 7,
+				Maximum_Chi = 150,
 
 				-- // thing to skip doing
 				Skip_Fox = false, -- Skip The Middle Fox Trade (Corrupted Kitsune)
@@ -174,18 +174,18 @@ getgenv().ConfigsKaitun = {
 		Place = {
 			"Gourmet Egg",
 			"Zen Egg",
-			"Primal Egg",
+			--"Primal Egg",
 			"Anti Bee Egg",
-			"Corrupted Zen Egg",
-			"Dinosaur Egg",
+			--"Dinosaur Egg",
 			"Oasis Egg",
 			"Night Egg",
 			"Bug Egg",
 			"Paradise Egg",
-			"Bee Egg",
-			"Rare Summer Egg",
-			"Mythical Egg",
-			"Common Egg",
+			"Common Summer Egg",
+			--"Bee Egg",
+			--"Rare Summer Egg",
+			--"Mythical Egg",
+			--"Common Egg",
 		},
 		Buy = {
 			"Anti Bee Egg",
