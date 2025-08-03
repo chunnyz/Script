@@ -1,4 +1,4 @@
--- Update config : 3/8/2025
+-- Update config : 4/8/2025
 setfpscap(3)
 task.wait(5)
 getgenv().ConfigsKaitun = {
@@ -259,9 +259,9 @@ getgenv().ConfigsKaitun = {
 			["Bee"] = 3,
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked,
-		Instant_Sell = {		
+		--Instant_Sell = {		
 			--"Bunny",
-			"Shiba Inu",
+			--"Shiba Inu",
 			--"Dog",
 			--"Golden Lab",
 		--}
