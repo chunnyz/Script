@@ -26,8 +26,17 @@ getgenv().ConfigsKaitun = {
 			"Fossilight",
 			"Tranquil Bloom",
 			"Grand Tomato",
+			
+			-- locked fruit for zen event
+			["Tomato"] = 1, ["Strawberry"] = 1, ["Blueberry"] = 1,
+			["Orange Tulip"] = 1, ["Corn"] = 1, ["Daffodil"] = 1,
+			["Bamboo"] = 1, ["Apple"] = 1, ["Coconut"] = 1,
+			["Pumpkin"] = 1, ["Watermelon"] = 1, ["Cactus"] = 1,
+			["Dragon Fruit"] = 1, ["Mango"] = 1, ["Grape"] = 1,
+			["Mushroom"] = 1, ["Pepper"] = 1, ["Cacao"] = 1
 		}
 	},
+	
 	Seed = {
 		Buy = {
 			Mode = "Auto", -- Custom , Auto
