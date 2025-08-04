@@ -1,6 +1,5 @@
 -- Update config : 4/8/2025
 setfpscap(3)
-task.wait(5)
 getgenv().ConfigsKaitun = {
 	["Block Pet Gift"] = true,
 
