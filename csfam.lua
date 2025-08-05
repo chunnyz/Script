@@ -1,13 +1,16 @@
--- Update config : 4/8/2025
+-- Update config : 5/8/2025
 setfpscap(3)
+task.wait(5)
 getgenv().ConfigsKaitun = {
+	Beta_Fix_Data_Sync = true,
+
 	["Block Pet Gift"] = false,
 
 	Collect_Cooldown = 60, -- cooldown to collect fruit
 	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
 
 	["Low Cpu"] = true,
-	["Auto Rejoin"] = true,
+	["Auto Rejoin"] = false,
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
@@ -26,14 +29,6 @@ getgenv().ConfigsKaitun = {
 			"Fossilight",
 			"Tranquil Bloom",
 			"Grand Tomato",
-			
-			-- locked fruit for zen event
-			["Tomato"] = 1, ["Strawberry"] = 1, ["Blueberry"] = 1,
-			["Orange Tulip"] = 1, ["Corn"] = 1, ["Daffodil"] = 1,
-			["Bamboo"] = 1, ["Apple"] = 1, ["Coconut"] = 1,
-			["Pumpkin"] = 1, ["Watermelon"] = 1, ["Cactus"] = 1,
-			["Dragon Fruit"] = 1, ["Mango"] = 1, ["Grape"] = 1,
-			["Mushroom"] = 1, ["Pepper"] = 1, ["Cacao"] = 1
 		}
 	},
 	
@@ -111,24 +106,6 @@ getgenv().ConfigsKaitun = {
 		["Cook Event"] = {
 			Minimum_Money = 1_000_000, -- minimum money to start play this event
 		},
-		["Zen Event"] = {
-			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 1_500_000_000_000,
-				Minimum_Money = 1_000_000,
-				Minimum_Chi = 20
-			},
-			["Doing"] = {
-				Minimum_Money = 1_000_000, -- minimum money to start play this event
-				First_Upgrade_Tree = 7,
-				Maximum_Chi = 150,
-
-				-- // thing to skip doing
-				Skip_Fox = false, -- Skip The Middle Fox Trade (Corrupted Kitsune)
-				Skip_Corrupted_OldMan = false, -- Skip The OldMan Trade (Kodama)
-				-- If u need to skip Tranquill OldMan Set "First Upgrade Tree" To 0 and Max Chi To 99999
-			}
-		},
-
 		["Traveling Shop"] = {
 			"Bald Eagle",
 			"Star Caller",
