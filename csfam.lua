@@ -1,21 +1,18 @@
--- Update config : 5/8/2025
-setfpscap(3)
-task.wait(5)
+-- Update config : 6/8/2025
+setfpscap(5)
 getgenv().ConfigsKaitun = {
-	Beta_Fix_Data_Sync = true,
-
-	["Block Pet Gift"] = false,
+	["Block Pet Gift"] = true,
 
 	Collect_Cooldown = 60, -- cooldown to collect fruit
 	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
-
-	["Low Cpu"] = true,
-	["Auto Rejoin"] = false,
-
+	
+	["Low Cpu"] = false,
+	["Auto Rejoin"] = true,
+	
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 200,
-		["Destroy Untill"] = 150,
+		["Limit"] = 300,
+		["Destroy Untill"] = 250,
 
 		["Safe Tree"] = {
 			"Maple Apple",
@@ -31,54 +28,18 @@ getgenv().ConfigsKaitun = {
 			"Grand Tomato",
 		}
 	},
-	
+
 	Seed = {
 		Buy = {
 			Mode = "Auto", -- Custom , Auto
 			Custom = {
 				"Carrot",
-				"Bamboo",
-				"Pumpkin",
-				"Daffodil",
-				"Orange Tulip",
-				"Watermelon",
-				"Mushroom",
-				"Avocado",
-				"Feijoa",
-				"Cauliflower",
-				"Loquat",
-				"Green Apple",
-				"Nightshade",
-				"Firefly Fern",
-				"Soft Sunshine",
-				"Zen Rocks",
-				"Hinomai",
-				"Beanstalk",
-				"Ember Lily",
-				"Sunflower",
-				"Sugar Apple",
-				"Burning Bud",
-				"Giant Pinecone",
-				"Spiked Mango",
 			}
 		},
 		Place = {
 			Mode = "Lock", -- Select , Lock
 			Select = {
-				"Carrot",
-				"Tomato",
-				"Blueberry",
-				"Corn",
-				"Bamboo",
-				"Starwberry",
-				"Apple",
-				"Pumpkin",
-				"OrangeTulip",
-				"Pepper",
-				"Cactus",
-				"Watermelon",
-				"Mushroom",
-				"GiantPinecone",
+				"Carrot"
 			},
 			Lock = {
 				"Maple Apple",
@@ -104,7 +65,7 @@ getgenv().ConfigsKaitun = {
 
 	Events = {
 		["Cook Event"] = {
-			Minimum_Money = 1_000_000, -- minimum money to start play this event
+			Minimum_Money = 30_000_000, -- minimum money to start play this event
 		},
 		["Traveling Shop"] = {
 			"Bald Eagle",
@@ -113,45 +74,28 @@ getgenv().ConfigsKaitun = {
 		},
 		Craft = {
 			"Anti Bee Egg",
-			"Primal Egg",
-			"Ancient Seed Pack",
-			"Small Treat",
-			"Small Toy",
-			"Lightning Rod"
 		},
 		Shop = {
 			"Zen Egg",
-			--"Raiju",
+			"Raiju",
 		},
 		Start_Do_Honey = 1_000_000 -- start trade fruit for honey at money
 	},
 
 	Gear = {
 		Buy = { 
-			"Watering Can",
-			"Trowel",
-			"Recall Wrench",
-			"Magnifying Glass",
-			"Tanning Mirror",
-			"Cleaning Spray",
-			"Favorite Tool",
-			"Harvest Tool",
-			"Friendship Pot",
+			"Grandmaster Sprinkler",
 			"Master Sprinkler",
-			"Basic Sprinkler",
 			"Godly Sprinkler",
 			"Advanced Sprinkler",
-			"Medium Toy",
-			"Medium Treat",
-			"Levelup Lollipop",
+			"Basic Sprinkler",
 			"Lightning Rod",
+			"Level Up Lollipop",
+			"Medium Treat",
+			"Medium Toy",
 		},
 		Lock = {
-			"Master Sprinkler",
-			"Godly Sprinkler",
-			"Advanced Sprinkler",
-			"Basic Sprinkler",
-			"Lightning Rod",
+
 		},
 	},
 
@@ -159,31 +103,21 @@ getgenv().ConfigsKaitun = {
 		Place = {
 			"Gourmet Egg",
 			"Zen Egg",
-			--"Primal Egg",
 			"Anti Bee Egg",
-			--"Dinosaur Egg",
-			"Oasis Egg",
-			"Night Egg",
 			"Bug Egg",
 			"Paradise Egg",
-			"Rare Egg",
 			"Common Summer Egg",
-			--"Bee Egg",
-			--"Rare Summer Egg",
-			--"Mythical Egg",
-			--"Common Egg",
 		},
 		Buy = {
-			"Anti Bee Egg",
 			"Bee Egg",
-			"Night Egg",
-			"Bug Egg",
+			"Oasis Egg",
 			"Paradise Egg",
-			"Mythical Egg",
-			"Rare Egg",
+			"Anti Bee Egg",
+			"Night Egg",
 			"Rare Summer Egg",
+			"Bug Egg",
+			"Mythical Egg",
 			"Common Summer Egg",
-			"Common Egg",
 		}
 	},
 
@@ -191,67 +125,68 @@ getgenv().ConfigsKaitun = {
 		["Start Delete Pet At"] = 50,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				["Kodama"] = { 8, 100, 1 },
-				["Starfish"] = { 8, 100, 1 },
+				["Starfish"] = { 7, 100, 1, true },
+
 			},
 			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				["Tanchozuru"] = { 5, 100, 1 },
-				["Ostrich"] = { 3, 100, 2 },
+				["Ostrich"] = { 5, 100, 1 },
+				["Capybara"] = { 3, 100, 2 },
+
 			},
 		},
-		Favorite_LockedPet = false,
-		Locked_Pet_Age = 50, -- pet that age > 60 will lock
+		Favorite_LockedPet = true,
+		Locked_Pet_Age = 99, -- pet that age > 60 will lock
 		Locked = {
 			"French Fry Ferret",
 			"Spaghetti Sloth",
+			"Mizuchi",
+			"Tsuchinoko",
+			"Football",
 			"Corrupted Kitsune",
-			"Kitsune",
-			"Kappa",
+			"Corrupted Kodama",
+			"Scarlet Macaw",
+			"Koi",
 			"Tanchozuru",
+			"Kitsune",
+			"Capybara",
 			"Disco Bee",
 			"Butterfly",
 			"Queen Bee",
 			"Dragonfly",
 			"Raccoon",
-			"Red Fox",
+			"Fennec Fox",
 			"Mimic Octopus",
-			"Hyacinth Macaw",
-			"Brontosaurus",
-			"Dilophosaurus",
-			"Ankylosaurus",
-			"Spinosaurus",
-			"T-Rex",
-			"Mizuchi",
-			"Raiju",
-			"Corrupted Kodama",
+			"Red Fox",
+			"Blood Owl",
 			"Moth",
-			["Sushi Bear"] = 3,
-			["Orange Tabby"] = 5,
-			["Pancake Mole"] = 3,
-			["Mochi Mouse"] = 3,
-			["Tarantula Hawk"] = 2,
+			["Sushi Bear"] = 5,
+			["Mochi Mouse"] = 5,
 			["Bald Eagle"] = 5,
 			["Moon Cat"] = 10,
-			["Chicken"] = 2,
-			["Rooster"] = 2,
-			["Blood Kiwi"] = 5,
-			["Ostrich"] = 5,
-			["Kappa"] = 5,
-			["Capybara"] = 5,
-			["Praying Mantis"] = 5,
+			["Ostrich"] = 3,
+			["Kappa"] = 2,
 			["Starfish"] = 10,
-			["Nihonzaru"] = 5,
-			["Triceratops"] = 5,
+			["Triceratops"] = 2,
 			["Bee"] = 3,
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked,
-		--Instant_Sell = {		
-			--"Bunny",
-			--"Shiba Inu",
-			--"Dog",
-			--"Golden Lab",
-		--}
+		Instant_Sell = {		
+			"Shiba Inu",
+			"Seagull",
+			"Crab",
+			"Tanuki",
+			"Nihonzaru",
+			"Snail",
+			"Caterpillar",
+			"Giant Ant",
+			"Bagel Bunny",
+			"Pancake Mole",
+			"Peacock",
+			"Flamingo",
+			"Brown Mouse",
+			"Kodama",
+		}
 	},
 
 	Webhook = {
@@ -267,6 +202,13 @@ getgenv().ConfigsKaitun = {
 				"Idk"
 			},
 			Pets = {
+				"Disco Bee",
+				"Butterfly",
+				"Mimic Octopus",
+				"Queen Bee",
+				"Dragonfly",
+				"Raccoon",
+				"Fennec Fox",
 				"Kitsune",
 				"French Fry Ferret",
 			},
