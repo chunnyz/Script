@@ -135,7 +135,7 @@ getgenv().ConfigsKaitun = {
 
 			},
 		},
-		Favorite_LockedPet = true,
+		Favorite_LockedPet = false,
 		Locked_Pet_Age = 99, -- pet that age > 60 will lock
 		Locked = {
 			"French Fry Ferret",
