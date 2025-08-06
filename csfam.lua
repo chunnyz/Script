@@ -1,6 +1,8 @@
 -- Update config : 6/8/2025
 setfpscap(5)
 getgenv().ConfigsKaitun = {
+	Beta_Fix_Data_Sync = true,
+	
 	["Block Pet Gift"] = true,
 
 	Collect_Cooldown = 60, -- cooldown to collect fruit
