@@ -1,4 +1,4 @@
--- Update config : 6/8/2025
+-- Update config : 8/8/2025
 setfpscap(5)
 getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
@@ -8,7 +8,7 @@ getgenv().ConfigsKaitun = {
 	Collect_Cooldown = 60, -- cooldown to collect fruit
 	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
 	
-	["Low Cpu"] = true,
+	["Low Cpu"] = false,
 	["Auto Rejoin"] = true,
 	
 	["Rejoin When Update"] = false,
@@ -172,9 +172,25 @@ getgenv().ConfigsKaitun = {
 			["Triceratops"] = 2,
 			["Bee"] = 3,
 		},
-		LockPet_Weight = 7, -- if Weight >= 10 they will locked
+		LockPet_Weight = 7, -- if Weight >= 10 they will locked,
+		Instant_Sell = {		
+			"Shiba Inu",
+			"Seagull",
+			"Crab",
+			"Tanuki",
+			"Nihonzaru",
+			"Snail",
+			"Caterpillar",
+			"Giant Ant",
+			"Bagel Bunny",
+			"Pancake Mole",
+			"Peacock",
+			"Flamingo",
+			"Brown Mouse",
+			"Kodama",
+		}
 	},
-
+	
 	Webhook = {
 		UrlPet = "https://discord.com/api/webhooks/1395480283029176542/dOwBT0fIYYEcUViB-KzgdFECrAJa3W_XBxIpyg1UdX3pdKrpfveuWpz1_8wE9qTYSuOx",
 		UrlSeed = "",
