@@ -8,7 +8,7 @@ getgenv().ConfigsKaitun = {
 	Collect_Cooldown = 60, -- cooldown to collect fruit
 	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
 	
-	["Low Cpu"] = false,
+	["Low Cpu"] = true,
 	["Auto Rejoin"] = true,
 	
 	["Rejoin When Update"] = false,
@@ -86,7 +86,7 @@ getgenv().ConfigsKaitun = {
 
 	Gear = {
 		Buy = { 
-			"Grandmaster Sprinkler",
+			--"Grandmaster Sprinkler",
 			"Master Sprinkler",
 			"Godly Sprinkler",
 			"Advanced Sprinkler",
@@ -172,23 +172,7 @@ getgenv().ConfigsKaitun = {
 			["Triceratops"] = 2,
 			["Bee"] = 3,
 		},
-		LockPet_Weight = 5, -- if Weight >= 10 they will locked,
-		Instant_Sell = {		
-			"Shiba Inu",
-			"Seagull",
-			"Crab",
-			"Tanuki",
-			"Nihonzaru",
-			"Snail",
-			"Caterpillar",
-			"Giant Ant",
-			"Bagel Bunny",
-			"Pancake Mole",
-			"Peacock",
-			"Flamingo",
-			"Brown Mouse",
-			"Kodama",
-		}
+		LockPet_Weight = 7, -- if Weight >= 10 they will locked
 	},
 
 	Webhook = {
