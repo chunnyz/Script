@@ -1,8 +1,6 @@
 -- Update config : 8/8/2025
 setfpscap(5)
 getgenv().ConfigsKaitun = {
-	Beta_Fix_Data_Sync = true,
-	
 	["Block Pet Gift"] = true,
 
 	Collect_Cooldown = 60, -- cooldown to collect fruit
@@ -28,6 +26,14 @@ getgenv().ConfigsKaitun = {
 			"Fossilight",
 			"Tranquil Bloom",
 			"Grand Tomato",
+      
+			-- locked fruit for zen event
+			["Tomato"] = 1, ["Strawberry"] = 1, ["Blueberry"] = 1,
+			["Orange Tulip"] = 1, ["Corn"] = 1, ["Daffodil"] = 1,
+			["Bamboo"] = 1, ["Apple"] = 1, ["Coconut"] = 1,
+			["Pumpkin"] = 1, ["Watermelon"] = 1, ["Cactus"] = 1,
+			["Dragon Fruit"] = 1, ["Mango"] = 1, ["Grape"] = 1,
+			["Mushroom"] = 1, ["Pepper"] = 1, ["Cacao"] = 1
 		}
 	},
 
@@ -86,7 +92,7 @@ getgenv().ConfigsKaitun = {
 
 	Gear = {
 		Buy = { 
-			--"Grandmaster Sprinkler",
+			"Grandmaster Sprinkler",
 			"Master Sprinkler",
 			"Godly Sprinkler",
 			"Advanced Sprinkler",
@@ -95,6 +101,7 @@ getgenv().ConfigsKaitun = {
 			"Level Up Lollipop",
 			"Medium Treat",
 			"Medium Toy",
+			"Small Toy",
 		},
 		Lock = {
 
@@ -132,8 +139,9 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				["Ostrich"] = { 5, 100, 1 },
-				["Capybara"] = { 3, 100, 2 },
+				["Spaghetti Sloth"] = { 5, 100, 1 },
+				["Ostrich"] = { 5, 100, 2 },
+				["Capybara"] = { 3, 100, 3 },
 
 			},
 		},
@@ -172,23 +180,7 @@ getgenv().ConfigsKaitun = {
 			["Triceratops"] = 2,
 			["Bee"] = 3,
 		},
-		LockPet_Weight = 7, -- if Weight >= 10 they will locked,
-		Instant_Sell = {		
-			"Shiba Inu",
-			"Seagull",
-			"Crab",
-			"Tanuki",
-			"Nihonzaru",
-			"Snail",
-			"Caterpillar",
-			"Giant Ant",
-			"Bagel Bunny",
-			"Pancake Mole",
-			"Peacock",
-			"Flamingo",
-			"Brown Mouse",
-			"Kodama",
-		}
+		LockPet_Weight = 7, -- if Weight >= 10 they will locked
 	},
 	
 	Webhook = {
