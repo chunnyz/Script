@@ -1,3 +1,4 @@
+-- 9/8/68
 script_key="erPbbJCLLrFrPCfzRlUSYodVTWdgpXHo";
 setfpscap(3)
 
