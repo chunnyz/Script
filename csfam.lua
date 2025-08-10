@@ -219,7 +219,7 @@ getgenv().ConfigsKaitun = {
 			["Chicken"] = 2,
 			["Rooster"] = 2,
 			["Tanchozuru"] = 5,
-			["Sunny-Side Chicken"] = 2,
+			["Sunny-Side Chicken"] = 1,
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 	},
