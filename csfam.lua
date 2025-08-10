@@ -174,8 +174,9 @@ getgenv().ConfigsKaitun = {
 			},
 		},
 		Favorite_LockedPet = false,
-		Locked_Pet_Age = 60, -- pet that age > 60 will lock
+		Locked_Pet_Age = 50, -- pet that age > 60 will lock
 		Locked = {
+			"Lobster Thermidor",
 			"French Fry Ferret",
 			"Spaghetti Sloth",
 			"Corrupted Kitsune",
@@ -201,12 +202,11 @@ getgenv().ConfigsKaitun = {
 			"Mimic Octopus",
 			"Red Fox",
 			"Blood Owl",
-			"Moth",
-			["Sushi Bear"] = 5,
-			["Mochi Mouse"] = 5,
+			["Sushi Bear"] = 2,
+			["Mochi Mouse"] = 2,
 			["Bald Eagle"] = 5,
 			["Moon Cat"] = 10,
-			["Ostrich"] = 3,
+			["Ostrich"] = 2,
 			["Kappa"] = 2,
 			["Starfish"] = 10,
 			["Triceratops"] = 2,
