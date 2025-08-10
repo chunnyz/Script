@@ -239,7 +239,6 @@ getgenv().ConfigsKaitun = {
 				"Idk"
 			},
 			Pets = {
-				"Lobster Thermidor",
 				"Kitsune",
 			},
 			Pet_Weight_Noti = true,
