@@ -1,55 +1,242 @@
--- 9/8/68
-script_key="erPbbJCLLrFrPCfzRlUSYodVTWdgpXHo";
-setfpscap(3)
+getgenv().ConfigsKaitun = {
+	Beta_Fix_Data_Sync = true,
 
-getgenv().gagConfig = {
-    -- Event:
-    CRAFT_EVENT = { "Anti Bee Egg" },
-    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    CLAIM_FOOD_CONNOISSEUR_REWARD = { "Culinarian Chest", "Gorilla Chef", "Gourmet Egg", "Sunny-Side Chicken", "Pet Shard Aromatic" },
-    
-    -- General:
-    AUTO_UPDATE_RESTART = true,
-    REDEEM_CODES = {},
-    EXTRA_PET_SLOTS = 5,
-    EXTRA_EGG_SLOTS = 5,
-    ADD_FRIEND = true,
-    OPEN_ALL_SEED_PACK = true,
+	NoDeletePlayer = false,
 
-    MAX_PLANTS = 250,
-    DESTROY_UNTIL_MIN_PLANTS = 200,
-    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Apple" },
-    LIMIT_PLANT_SEED = { ["Strawberry"] = 5, ["Blueberry"] = 5, ["Apple"] = 5, ["Tomato"] = 5, ["Corn"] = 5, ["Bamboo"] = 5, ["Coconut"] = 5, ["Pumpkin"] = 5, ["Watermelon"] = 5, ["Pepper"] = 5 },
-    
-    BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
-    PLANT_EGGS = { "Gourmet Egg", "Corrupted Zen Egg", "Zen Egg", "Dinosaur Egg", "Primal Egg", "Anti Bee Egg", "Night Egg", "Bug Egg", "Paradise Egg", "Common Summer Egg" },
-	
-    BUY_SEED_SHOP = { "Elder Strawberry", "Junkbot", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", ["Coconut"] = 50, ["Bamboo"] = 50, ["Apple"] = 50, ["Pumpkin"] = 50, ["Watermelon"] = 50, ["Daffodil"] = 50, ["Tomato"] = 50, ["Orange Tulip"] = 50, ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 50 },
-    KEEP_SEEDS = { "Bone Blossom" },
-    KEEP_SEEDS_AFTER_MAX_PLANTS = { "Carrot" },
-    
-    FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
-    SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
+	["Block Pet Gift"] = true,
 
-    KEEP_PETS = { "Junkbot", "Gorilla Chef", "Lobster Thermidor", "French Fry Ferret", "Moth", "Spaghetti Sloth", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", ["Bee"] = 1, ["Sushi Bear"] = 5, ["Ostrich"] = 5, ["Kodama"] = 6, ["Corrupted Kodama"] = 6, ["Blood Kiwi"] = 2, ["Capybara"] = 6, ["Starfish"] = 2, ["Chicken"] = 2, ["Rooster"] = 2, ["Tanchozuru"] = 5, ["Kappa"] = 3 , ["Mochi Mouse"] = 4 , ["Bacon Pig"] = 1 , ["Hotdog Daschund"] = 1 , ["Sunny-Side Chicken"] = 2 },
-    KEEP_PETS_WEIGHT = { ["Red Giant Ant"] = 5 },
-    KEEP_PETS_AGE = { ["Starfish"] = 75 },
+	Collect_Cooldown = 120, -- cooldown to collect fruit
 
-    EQUIP_PETS = { "Bald Eagle", ["Rooster"] = 2, ["Blood Kiwi"] = 2, ["Capybara"] = 1, ["Starfish"] = 1, ["Chicken"] = 2 },
-    USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
-    REMOVE_PET_MAX_UPGRADE = { "Capybara", "Starfish" },  -- Unequip from garden
+	["Low Cpu"] = true,
+	["Auto Rejoin"] = true,
 
-    BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket" },
-    USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
+	["Rejoin When Update"] = false,
+	["Limit Tree"] = {
+		["Limit"] = 250,
+		["Destroy Untill"] = 200,
 
-    PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1395480283029176542/dOwBT0fIYYEcUViB-KzgdFECrAJa3W_XBxIpyg1UdX3pdKrpfveuWpz1_8wE9qTYSuOx",
-    SEED_WEBHOOK_URL = "", 
-    NOTIFY_PETS = { "Gorilla Chef", "Lobster Thermidor", "French Fry Ferret", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Dragonfly", "Butterfly", "Mimic Octopus" },
-    NOTIFY_PETS_WEIGHT = 5,
-    DISCORD_ID = "",
-    WEBHOOK_NOTE = "",
-    SHOW_WEBHOOK_USERNAME = true,
-    SHOW_WEBHOOK_JOBID = false,
+		["Safe Tree"] = {
+			"Maple Apple",
+			"Sunflower",
+			"Dragon Pepper",
+			"Elephant Ears",
+			"Moon Melon",
+			"Easter Egg",
+			"Moon Mango",
+			"Bone Blossom",
+			"Fossilight",
+			"Tranquil Bloom",
+			"Grand Tomato",
+			"King Cabbage",
+		}
+	},
+
+	Seed = {
+		Buy = {
+			Mode = "Custom", -- Custom , Auto
+			Custom = {
+				"Tomato",
+				"Strawberry",
+				"Bell Pepper",
+				"Blood Banana",
+				"Onion",
+				"Pear",
+				"Grape",
+				"Mushroom",
+				"Pepper",
+				"Cacao",
+				"Beanstalk",
+				"Ember Lily",
+				"Sugar Apple",
+				"Burning Bud",
+				"Giant Pinecone",
+				"Elder Strawberry",
+			}
+		},
+		Place = {
+			Mode = "Lock", -- Select , Lock
+			Select = {
+				"Carrot"
+			},
+			Lock = {
+				"Maple Apple",
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
+				"Moon Melon",
+				"Easter Egg",
+				"Moon Mango",
+				"Bone Blossom",
+				"Fossilight",
+				"Tranquil Bloom",
+				"Grand Tomato",
+				"King Cabbage",
+			}
+		}
+	},
+
+	["Seed Pack"] = {
+		Locked = {
+
+		}
+	},
+
+	Events = {
+		["Cook Event"] = {
+			Minimum_Money = 30_000_000, -- minimum money to start play this event
+			Rewards_Item = { -- The top is the most top mean prefered.
+				"Gorilla Chef",
+				"Gourmet Egg",
+				"Culinarian Chest",
+				"Gourmet Seed Pack",
+				"Sunny-Side Chicken",
+				-- u can add it more as u want, if it not in list.
+			}
+		},
+		["Traveling Shop"] = {
+			"Bee Egg",
+		},
+		Craft = {
+			"Anti Bee Egg",
+			"Primal Egg",
+			"Dinosaur Egg",
+		},
+		Shop = {
+			"Zen Egg",
+			"Raiju",
+		},
+		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
+	},
+
+	Gear = {
+		Buy = { 
+			"Master Sprinkler",
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
+			"Lightning Rod",
+			"Level Up Lollipop",
+			"Medium Treat",
+			"Medium Toy",
+		},
+		Lock = {
+			"Master Sprinkler",
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
+			"Lightning Rod",
+		},
+	},
+
+	Eggs = {
+		Place = {
+			"Gourmet Egg",
+			"Zen Egg",
+			"Primal Egg",
+			"Dinosaur Egg",
+			"Oasis Egg",
+			"Anti Bee Egg",
+			"Night Egg",
+			"Bug Egg",
+			"Paradise Egg",
+			"Common Summer Egg",
+		},
+		Buy = {
+			"Bee Egg",
+			"Oasis Egg",
+			"Paradise Egg",
+			"Anti Bee Egg",
+			"Night Egg",
+			"Rare Summer Egg",
+			"Bug Egg",
+			"Mythical Egg",
+			"Common Summer Egg",
+			"Common Egg",
+		}
+	},
+
+	Pets = {
+		["Start Delete Pet At"] = 50,
+		["Upgrade Slot"] = {
+			["Pet"] = {
+				["Starfish"] = { 5, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
+			},
+			["Limit Upgrade"] = 2, -- max is 5 (more than or lower than 1 will do nothing)
+			["Equip When Done"] = {
+				["Tanchozuru"] = { 5, 100, 1 }, -- 5 on the first mean equip only 5 | pet , 100 mean equip only level pet lower than 100 | the one on the last is priority it will ues first if possible 
+				["Ostrich"] = { 3, 100, 2 },
+				["Blood Kiwi"] = { 8, 100 },
+				["Seal"] = { 8, 100 },
+				["Rooster"] = { 8, 100 },
+				["Starfish"] = { 5, 75 },
+				["Spaghetti Sloth"] = { 4, 100 },
+				["Koi"] = { 2, 100 },
+			},
+		},
+		Favorite_LockedPet = false,
+		Locked_Pet_Age = 60, -- pet that age > 60 will lock
+		Locked = {
+			"French Fry Ferret",
+			"Spaghetti Sloth",
+			"Corrupted Kitsune",
+			"Raiju",
+			"Koi",
+			"Tanuki",
+			"Tanchozuru",
+			"Kappa",
+			"Kitsune",
+			"Dilophosaurus",
+			"Moon Cat",
+			"Capybara",
+			"Spinosaurus",
+			"Bear Bee",
+			"T-Rex",
+			"Brontosaurus",
+			"Disco Bee",
+			"Butterfly",
+			"Queen Bee",
+			"Dragonfly",
+			"Raccoon",
+			"Fennec Fox",
+			"Mimic Octopus",
+			"Red Fox",
+			"Blood Owl",
+			"Moth",
+			["Sushi Bear"] = 5,
+			["Mochi Mouse"] = 5,
+			["Bald Eagle"] = 5,
+			["Moon Cat"] = 10,
+			["Ostrich"] = 3,
+			["Kappa"] = 2,
+			["Starfish"] = 10,
+			["Triceratops"] = 2,
+			["Bee"] = 3,
+		},
+		LockPet_Weight = 5, -- if Weight >= 10 they will locked
+	},
+
+	Webhook = {
+		UrlPet = "https://discord.com/api/webhooks/1395480283029176542/dOwBT0fIYYEcUViB-KzgdFECrAJa3W_XBxIpyg1UdX3pdKrpfveuWpz1_8wE9qTYSuOx",
+		UrlSeed = "",
+		PcName = "CS FAM",
+
+		Noti = {
+			Seeds = {
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
+			},
+			SeedPack = {
+				"Idk"
+			},
+			Pets = {
+				"Lobster Thermidor",
+				"Kitsune",
+			},
+			Pet_Weight_Noti = true,
+		}
+	},
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c916e5b90dc37c71ecf1ec00dfce3d5d.lua"))()
+License = "287MIU1KAqEbt6zgPcB9hUvDHbJPDz48"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
