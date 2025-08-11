@@ -211,7 +211,7 @@ getgenv().ConfigsKaitun = {
 			["Kappa"] = 2,
 			["Starfish"] = 10,
 			["Triceratops"] = 2,
-			["Bee"] = 3,
+			["Bee"] = 2,
 			["Kodama"] = 5,
 			["Corrupted Kodama"] = 5,
 			["Blood Kiwi"] = 2,
@@ -219,7 +219,7 @@ getgenv().ConfigsKaitun = {
 			["Chicken"] = 2,
 			["Rooster"] = 2,
 			["Tanchozuru"] = 5,
-			["Sunny-Side Chicken"] = 1,
+			["Sunny-Side Chicken"] = 2,
 		},
 		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 	},
