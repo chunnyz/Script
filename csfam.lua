@@ -92,8 +92,8 @@ getgenv().ConfigsKaitun = {
 		},
 		Shop = {
 			"Zen Egg",
-			"Raiju",
-			"Junkbot",
+			--"Raiju",
+			--"Junkbot",
 			--"Zen Seed Pack",
 			--"Spiked Mango",
 			--"Pet Shard Tranquil",
