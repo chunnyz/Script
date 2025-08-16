@@ -13,11 +13,14 @@ getgenv().ConfigsKaitun = {
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 500,
+		["Limit"] = 800,
 		["Destroy Until"] = 0,
 
 		["Safe Tree"] = {
-			["Tomato"] = 500,
+			["Carrot"] = 200,
+			["Blueberry"] = 200,
+			["Pepper"] = 200,
+			["Tomato"] = 200,
 			"Maple Apple",
 			"Sunflower",
 			"Dragon Pepper",
@@ -30,6 +33,7 @@ getgenv().ConfigsKaitun = {
 			"Tranquil Bloom",
 			"Grand Tomato",
 			"King Cabbage",
+			"Princess Thorn",
 		}
 	},
 
@@ -58,6 +62,7 @@ getgenv().ConfigsKaitun = {
 				"Tranquil Bloom",
 				"Grand Tomato",
 				"King Cabbage",
+				"Princess Thorn",
 			}
 		}
 	},
