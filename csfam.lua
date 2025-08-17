@@ -328,7 +328,7 @@ getgenv().ConfigsKaitun = {
 				["Starfish"] = { 8, 75, 5 },
 			},
 		},
-		Favorite_LockedPet = true,
+		Favorite_LockedPet = false,
 		Locked = {
 			"Golden Goose",
 			"Lobster Thermidor",
