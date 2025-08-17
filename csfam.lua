@@ -13,13 +13,13 @@ getgenv().ConfigsKaitun = {
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 800,
-		["Destroy Until"] = 0,
+		["Limit"] = 500,
+		["Destroy Until"] = 500,
 
 		["Safe Tree"] = {
-			["Carrot"] = 200,
-			["Blueberry"] = 200,
-			["Pepper"] = 200,
+			["Carrot"] = 100,
+			["Blueberry"] = 100,
+			["Pepper"] = 100,
 			["Tomato"] = 200,
 			"Maple Apple",
 			"Sunflower",
@@ -77,6 +77,7 @@ getgenv().ConfigsKaitun = {
 		["Bean Event"] = {
 			Minimum_Money = 10_000_000, -- minimum money to start play this event
 		},
+		MaxMoney_Restocks = 100_000_000_000,
 		Shop = { -- un comment to buy
 			"Sprout Seed Pack",
 			"Sprout Egg",
@@ -84,7 +85,7 @@ getgenv().ConfigsKaitun = {
 			"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			"Spriggan",
+			["Spriggan"] = 8,
 		},
 		["Traveling Shop"] = {
 			"Pineapple",
