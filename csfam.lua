@@ -334,6 +334,7 @@ getgenv().ConfigsKaitun = {
 		Unfavorite_AllPet = true,
 		Favorite_LockedPet = false,
 		Locked = {
+			"Griffin",
 			"Golden Goose",
 			"Lobster Thermidor",
 			"French Fry Ferret",
