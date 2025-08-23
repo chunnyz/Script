@@ -243,6 +243,8 @@ getgenv().ConfigsKaitun = {
 			"Dinosaur Egg",
 			--"Honeysuckle",
 			--"Lightning Rod",
+			"Pet Shard GiantBean",
+			"Sprout Egg",
 		},
 		Start_Do_Honey = 100_000
 	},
@@ -306,6 +308,7 @@ getgenv().ConfigsKaitun = {
 	},
 	
 	Pets = {
+		["Auto Feed"] = true,
 		["Start Delete Pet At"] = 45,
 		["Upgrade Slot"] = {
 			["Pet"] = {
@@ -328,6 +331,7 @@ getgenv().ConfigsKaitun = {
 				["Starfish"] = { 8, 75, 5 },
 			},
 		},
+		Unfavorite_AllPet = true,
 		Favorite_LockedPet = false,
 		Locked = {
 			"Golden Goose",
@@ -377,9 +381,11 @@ getgenv().ConfigsKaitun = {
 			["Spaghetti Sloth"] = 2,
 			["Bacon Pig"] = 2,
 			["Gorilla Chef"] = 2,
-
 		},
 		LockPet_Weight = 5, -- if Weight >= 7 they will locked,
+		Ignore_Pet_Weight = {
+			"NAME oF PET THAT U DONT NEED LOCK",
+		},
 		Instant_Sell = {
 			"Grey Mouse",
 			"Squirrel",
