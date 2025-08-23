@@ -1,4 +1,4 @@
-setfpscap(3)
+setfpscap(5)
 getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
@@ -7,7 +7,6 @@ getgenv().ConfigsKaitun = {
 	["Block Pet Gift"] = true,
 
 	Collect_Cooldown = 300,
-	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation) -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = false,
@@ -27,7 +26,6 @@ getgenv().ConfigsKaitun = {
 			"Elephant Ears",
 			"Fossilight",
 			"Princess Thorn",
-			"Cyclamen",
             ["Blueberry"] = 15,
             ["Strawberry"] = 15,
             ["Apple"] = 15,
@@ -174,15 +172,16 @@ getgenv().ConfigsKaitun = {
                 "Zen Rocks",
                 "Enkaku",
                 "Corn",
-                "Crown of Thorns",
-                "Calla Lily",
-                "Cyclamen",
+				"Crown of Thorns",
+				"Calla Lily",
+				"Cyclamen",
+
 			}
 		},
 		Place = {
 			Mode = "Lock", -- Select , Lock
 			Select = {
-				"Tomato"
+				"Carrot"
 			},
 			Lock = {
 				--"Maple Apple",
@@ -205,7 +204,7 @@ getgenv().ConfigsKaitun = {
 	
 	["Seed Pack"] = {
 		Locked = {
-
+			
 		}
 	},
 	
@@ -218,10 +217,10 @@ getgenv().ConfigsKaitun = {
 			"Skyroot Chest",
 			"Sprout Egg",
 			"Sprout Seed Pack",
-			--"Mandrake",
+			-- "Mandrake",
 			--"Silver Fertilizer",
-			--"Canary Melon",
-			--"Amberheart",
+			-- "Canary Melon",
+			-- "Amberheart",
 			--["Spriggan"] = 8,
 			-- Friend Shop
 			--"Pet Shard GiantBean",
@@ -241,14 +240,13 @@ getgenv().ConfigsKaitun = {
             "Loquat",
             "Feijoa",
             "Pitcher Plant",
-            "Flower Seed Pack"
+            "Flower Seed Pack",
 		},
 		Craft = {
 			"Sprout Egg",
+			"Anti Bee Egg",
 			"Primal Egg",
 			"Ancient Seed Pack",
-			"Anti Bee Egg",
-			"Dinosaur Egg",
 			--"Honeysuckle",
 			--"Lightning Rod",
 		},
@@ -265,8 +263,9 @@ getgenv().ConfigsKaitun = {
 			"Medium Toy",
 			"Medium Treat",
 			"Level Up Lollipop",
+			"LevelUp Lollipop",
 			"Tanning Mirror",
-			"Grandmaster Spinkler"
+			"Grandmaster Sprinkler",
 		},
 		Lock = {
 
@@ -309,12 +308,13 @@ getgenv().ConfigsKaitun = {
 			"Common Summer Egg",
 			"Rare Egg",
 			"Uncommon Egg",
-			"Common Egg"
+			"Common Egg",
 		}
 	},
 	
 	Pets = {
 		["Auto Feed"] = true,
+
 		["Start Delete Pet At"] = 45,
 		["Upgrade Slot"] = {
 			["Pet"] = {
@@ -336,7 +336,7 @@ getgenv().ConfigsKaitun = {
 				["Blood Kiwi"] = { 8, 101, 2 },
 				["Rooster"] = { 8, 101, 3 },
 				["Sunny-Side Chicken"] = { 1, 101, 4 },
-				["Chicken"] = { 8 , 101, 5}
+				["Chicken"] = { 8 , 101, 5},
 				["Starfish"] = { 8, 75, 6 },
 			},
 		},
@@ -367,12 +367,12 @@ getgenv().ConfigsKaitun = {
 			"Junkbot",
 			"Moth",
 			"Chicken Zombie",
-			["Lemon Lion"] = 1,
-			["Peach Wasp"] = 1,
-			["Green Bean"] = 1,
-			["Mandrake"] = 2,
-			["Apple Gazelle"] = 1,
-			["Spriggan"] = 5,
+			["Lemon Lion"] = 2,
+			["Peach Wasp"] = 2,
+			["Green Bean"] = 2,
+			["Mandrake"] = 1,
+			["Apple Gazelle"] = 2,
+			["Spriggan"] = 2,
 			["Sunny-Side Chicken"] = 1,
 			["Ostrich"] = 3,
 			["Corrupted Kodama"] = 8,
@@ -386,22 +386,19 @@ getgenv().ConfigsKaitun = {
 			["Dairy Cow"] = 2,
 			["Jackalope"] = 2,
 			["Sapling"] = 2,
-			["Golem"] = 5,
+			["Golem"] = 2,
 			["Nihonzaru"] = 2,
 			["Sushi Bear"] = 2,
 			["Mochi Mouse"] = 2,
 			["Kappa"] = 1,
 			["Capybara"] = 5,
-			["Tanchozuru"] = 3,
+			["Tanchozuru"] = 2,
 			["Hotdog Daschund"] = 2,
 			["Spaghetti Sloth"] = 2,
 			["Bacon Pig"] = 2,
 			["Gorilla Chef"] = 2,
 		},
 		LockPet_Weight = 5, -- if Weight >= 7 they will locked,
-		Ignore_Pet_Weight = {
-			"NAME oF PET THAT U DONT NEED LOCK",
-		},
 		Instant_Sell = {
 			"Grey Mouse",
 			"Squirrel",
@@ -419,7 +416,6 @@ getgenv().ConfigsKaitun = {
 			"Bacon Pig",
 			"Dairy Cow",
 			"Pancake Mole",
-			--"Hotdog Daschund",
 			"Gorilla Chef",
 			"Seedling",
 			"Sushi Bear",
