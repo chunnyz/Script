@@ -27,6 +27,7 @@ getgenv().ConfigsKaitun = {
 			"Elephant Ears",
 			"Fossilight",
 			"Princess Thorn",
+			"Cyclamen",
             ["Blueberry"] = 12,
             ["Strawberry"] = 12,
             ["Apple"] = 10,
@@ -173,7 +174,6 @@ getgenv().ConfigsKaitun = {
                 "Zen Rocks",
                 "Enkaku",
                 "Corn",
-
 			}
 		},
 		Place = {
@@ -195,6 +195,7 @@ getgenv().ConfigsKaitun = {
 				"Grand Tomato",
 				"King Cabbage",
 				"Princess Thorn",
+				"Cyclamen",
 			}
 		}
 	},
