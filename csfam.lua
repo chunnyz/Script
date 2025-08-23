@@ -219,6 +219,9 @@ getgenv().ConfigsKaitun = {
 			-- "Canary Melon",
 			-- "Amberheart",
 			"Spriggan",
+			-- Friend Shop
+			"Skyroot Chest",
+			"Pet Shard GiantBean",
 		},
 		["Traveling Shop"] = {
             "Bee Egg",
@@ -358,6 +361,8 @@ getgenv().ConfigsKaitun = {
 			"Red Fox",
 			"Junkbot",
 			"Moth",
+			["Mandrake"] = 2,
+			["Apple Gazelle"] = 1,
 			["Spriggan"] = 5,
 			["Sunny-Side Chicken"] = 1,
 			["Ostrich"] = 3,
