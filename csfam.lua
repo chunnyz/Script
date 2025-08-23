@@ -361,6 +361,8 @@ getgenv().ConfigsKaitun = {
 			"Red Fox",
 			"Junkbot",
 			"Moth",
+			["Lemon Lion"] = 1,
+			["Peach Wasp"] = 1,
 			["Green Bean"] = 1,
 			["Mandrake"] = 2,
 			["Apple Gazelle"] = 1,
