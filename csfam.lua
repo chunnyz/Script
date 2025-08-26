@@ -315,7 +315,7 @@ getgenv().ConfigsKaitun = {
 	Pets = {
 		["Auto Feed"] = true,
 
-		["Start Delete Pet At"] = 45,
+		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
 			["Pet"] = {
 				--["Bacon Pig"] = { 8, 75, 1 },
@@ -367,7 +367,7 @@ getgenv().ConfigsKaitun = {
 			"Junkbot",
 			"Moth",
 			"Chicken Zombie",
-			["Elk"] = 2,
+			["Elk"] = 1,
 			["Lemon Lion"] = 2,
 			["Peach Wasp"] = 2,
 			["Green Bean"] = 2,
