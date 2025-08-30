@@ -47,14 +47,14 @@ getgenv().ConfigsKaitun = {
 			["Lightshoot"] = 2,
 			["Grape"] = 2,
 			["Daffodil"] = 2,
-			["Blueberry"] = 5,
-			["Strawberry"] = 5,
-			["Apple"] = 5,
-			["Coconut"] = 5,
-			["Dragon Fruit"] = 5,
-			["Mango"] = 5,
-			["Tomato"] = 5,
-			["Cactus"] = 5,
+			["Blueberry"] = 15,
+			["Strawberry"] = 15,
+			["Apple"] = 15,
+			["Coconut"] = 15,
+			["Dragon Fruit"] = 15,
+			["Mango"] = 15,
+			["Tomato"] = 15,
+			["Cactus"] = 15,
 		}
 	},
 
@@ -199,7 +199,9 @@ getgenv().ConfigsKaitun = {
 				"Crown of Thorns",
 				"Calla Lily",
 				"Cyclamen",
-
+				"Briar Rose",
+				"Spirit Flower",
+				"Wispwing",
 			}
 		},
 		Place = {
@@ -244,15 +246,15 @@ getgenv().ConfigsKaitun = {
 			Upgrade = {
 				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
 				Order = { -- top upgrade first, not put mean not upgrade
-					"Fairy Spawn Amount",
-					"Loose Fairy Spawn Amount",
 					"Glimmer Multiplier",
 					"Fairy Event Duration",
+					"Fairy Spawn Amount",
+					"Loose Fairy Spawn Amount",
 				},
 				Limit = {
-					["Glimmer Multiplier"] = 5, -- max 10
+					["Glimmer Multiplier"] = 10, -- max 10
 					["Loose Fairy Spawn Amount"] = 4, -- max 4
-					["Fairy Event Duration"] = 5, -- max 10
+					["Fairy Event Duration"] = 10, -- max 10
 					["Fairy Spawn Amount"] = 9, -- max 9
 				}
 			}
@@ -286,6 +288,9 @@ getgenv().ConfigsKaitun = {
 			"Feijoa",
 			"Pitcher Plant",
 			"Flower Seed Pack",
+			"Common Summer Egg",
+			"Rare Summer Egg",
+			"Paradise Egg"
 		},
 		Craft = {
 			"Sprout Egg",
@@ -320,13 +325,13 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Enchanted Egg",
+			"Bug Egg",
+			"Paradise Egg",
 			"Sprout Egg",
 			"Gourmet Egg",
 			"Zen Egg",
 			"Anti Bee Egg",
 			"Primal Egg",
-			"Bug Egg",
-			"Paradise Egg",
 			"Night Egg",
 			"Dinosaur Egg",
 			"Oasis Egg",
@@ -362,13 +367,20 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
+				["Glimmering Sprite"] = { 8, 101, 1 },
 				["Tarantula Hawk"] = { 2, 101, 1 },
-				["Blood Kiwi"] = { 8, 101, 2 },
-				["Rooster"] = { 8, 101, 3 },
-				["Seal"] = { 8, 100 },
-				["Sunny-Side Chicken"] = { 1, 101, 4 },
-				["Chicken"] = { 8 , 101, 5},
-				["Starfish"] = { 8, 75, 6 },
+				--["Gorilla Chef"] = { 8, 101, 1 },
+				--["Bacon Pig"] = { 8, 101, 2 },
+				--["Tanchozuru"] = { 8, 101, 3 },
+				--["Kappa"] = { 8, 101, 4 },
+				--["Spaghetti Sloth"] = { 8, 101, 5 },
+				--["Corrupted Kodama"] = { 8, 101, 6 },
+				--["Kodama"] = { 8, 101, 7 },
+				["Blood Kiwi"] = { 8, 101, 3 },
+				["Rooster"] = { 8, 101, 4 },
+				["Sunny-Side Chicken"] = { 1, 101, 5 },
+				["Chicken"] = { 8 , 101, 6 },
+				["Starfish"] = { 8, 75, 7 },
 			},
 		},
 		Unfavorite_AllPet = true,
@@ -399,10 +411,10 @@ getgenv().ConfigsKaitun = {
 			"Junkbot",
 			"Moth",
 			"Chicken Zombie",
+			["Glimmering Sprite"] = 8,
 			["Ladybug"] = 2,
 			["Pixie"] = 2,
 			["Imp"] = 2,
-			["Glimmering Sprite"] = 2,
 			["Lemon Lion"] = 2,
 			["Green Bean"] = 2,
 			["Sunny-Side Chicken"] = 1,
@@ -448,6 +460,9 @@ getgenv().ConfigsKaitun = {
 			"Deer",
 			"Spotted Deer",
 			"Pig",
+			"Elk",
+			"Monkey",
+			"Mandrake",
 		}
 	},
 
