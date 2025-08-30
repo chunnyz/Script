@@ -6,15 +6,15 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 200,
+	Collect_Cooldown = 300,
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = false,
 	
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 400,
-		["Destroy Untill"] = 400,
+		["Limit"] = 450,
+		["Destroy Untill"] = 450,
 		
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -40,7 +40,7 @@ getgenv().ConfigsKaitun = {
 			["Sugar Apple"] = 2,
 			["Ember Lily"] = 2,
 			["Orange Tulip"] = 2,
-			["Corn"] = 2,
+			["Corn"] = 10,
 			["Sunbulb"] = 2,
 			["Watermelon"] = 2,
 			["Beanstalk"] = 2,
@@ -217,14 +217,14 @@ getgenv().ConfigsKaitun = {
 				--"Moon Melon",
 				--"Easter Egg",
 				--"Moon Mango",
-				"Bone Blossom",
+				--"Bone Blossom",
 				--"Fossilight",
 				--"Tranquil Bloom",
 				--"Grand Tomato",
 				--"King Cabbage",
 				--"Princess Thorn",
-				"Cyclamen",
-				"Wispwing",
+				--"Cyclamen",
+				--"Wispwing",
 			}
 		}
 	},
@@ -386,7 +386,7 @@ getgenv().ConfigsKaitun = {
 		Unfavorite_AllPet = true,
 		Favorite_LockedPet = false,
 		Locked = {
-            "Cockatrice",
+			"Cockatrice",
 			"Griffin",
 			"Golden Goose",
 			"Lobster Thermidor",
