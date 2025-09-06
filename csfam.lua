@@ -247,9 +247,9 @@ getgenv().ConfigsKaitun = {
 		}
 	},
 	
-	Events = {
+		Events = {
 		["Fairy Event"] = {
-			Minimum_Money = 100_000, -- minimum money to start play this event
+			Minimum_Money = 10_000_000, -- minimum money to start play this event
 			Rewards_Item = { -- top mean select first
 				"Pet Shard Glimmering",
 				"Enchanted Egg",
@@ -268,52 +268,46 @@ getgenv().ConfigsKaitun = {
 				},
 				Limit = {
 					["Glimmer Multiplier"] = 5, -- max 10
-					["Loose Fairy Spawn Amount"] = 4, -- max 4
-					["Fairy Event Duration"] = 5, -- max 10
+					["Loose Fairy Spawn Amount"] = 10, -- max 10
+					["Fairy Event Duration"] = 10, -- max 10
 					["Fairy Spawn Amount"] = 9, -- max 9
 				}
 			}
 		},
 		MaxMoney_Restocks = 500_000_000_000,
-		Shop = { -- delete -- to buy
-			"Skyroot Chest",
-			"Sprout Egg",
+		Shop = { -- un comment to buy
+			"Enchanted Chest",
+			"Pet Shard Glimmering",
+			"Enchanted Egg",
+			"Enchanted Seed Pack",
+			-- "Drake",
+
 			"Sprout Seed Pack",
+			"Sprout Egg",
 			-- "Mandrake",
-			--"Silver Fertilizer",
+			"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			--["Spriggan"] = 8,
+			["Spriggan"] = 8,
 			-- Friend Shop
-			--"Pet Shard GiantBean",
+			"Skyroot Chest",
+			"Pet Shard GiantBean",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
-			"Bald Eagle",
-			"Cauliflower",
-			"Rafflesia",
-			"Green Apple",
-			"Avocado",
-			"Banana",
-			"Pineapple",
-			"Kiwi",
-			"Bell Pepper",
-			"Prickly Pear",
-			"Loquat",
-			"Feijoa",
-			"Pitcher Plant",
-			"Flower Seed Pack",
-			"Common Summer Egg",
-			"Rare Summer Egg",
-			"Paradise Egg"
+			"Paradise Egg", 
+			"Rare Summer Egg", 
+			"Common Summer Egg"
 		},
 		Craft = {
 			"Sprout Egg",
 			"Anti Bee Egg",
 			"Primal Egg",
 			"Ancient Seed Pack",
-			--"Honeysuckle",
-			--"Lightning Rod",
+			"Enchanted Chest",
+			"Fairy Net",
+			"Enchanted Egg",
+			"Enchanted Seed Pack",
 		},
 		Start_Do_Honey = 100_000
 	},
@@ -395,6 +389,7 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Phoenix",
 			"Cockatrice",
 			"Griffin",
 			"Golden Goose",
@@ -420,10 +415,9 @@ getgenv().ConfigsKaitun = {
 			"Junkbot",
 			"Moth",
 			"Chicken Zombie",
+			["Shroomie] = 2,
+			["Cardinal] = 2,
 			["Glimmering Sprite"] = 8,
-			["Ladybug"] = 2,
-			["Pixie"] = 2,
-			["Imp"] = 2,
 			["Lemon Lion"] = 2,
 			["Green Bean"] = 2,
 			["Sunny-Side Chicken"] = 1,
