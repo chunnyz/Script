@@ -4,29 +4,17 @@ getgenv().ConfigsKaitun = {
 
 	NoDeletePlayer = false,
 
-	["Block Pet Gift"] = false,
+	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 180, -- cooldown to collect fruit
+	Collect_Cooldown = 300,
 
 	["Low Cpu"] = true,
-	["Auto Rejoin"] = true,
-
+	["Auto Rejoin"] = false,
+	
 	["Rejoin When Update"] = false,
-
-	["Auto Trade Pet"] = { -- not done yet bro dont use
-		["Enabled"] = false, 
-		["Target"] =  { -- multi users
-			"username1",
-			"username2",
-		},
-		["Pet To Send"] = {
-			
-		}
-	},
-
 	["Limit Tree"] = {
-		["Limit"] = 400,
-		["Destroy Untill"] = 400,
+		["Limit"] = 450,
+		["Destroy Untill"] = 450,
 		
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -249,24 +237,21 @@ getgenv().ConfigsKaitun = {
 	
 		Events = {
 		["Fairy Event"] = {
-			Minimum_Money = 10_000_000, -- minimum money to start play this event
-			Rewards_Item = { -- top mean select first
-				"Pet Shard Glimmering",
+			Minimum_Money = 100_000, -- minimum money to start play this event
+			Rewards_Item = {
 				"Enchanted Egg",
-				"Mutation Spray Glimmering",
 				"FairyPoints",
-				"Fairy Targeter",
 				"Enchanted Seed Pack",
 			},
 			Upgrade = {
 				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
 				Order = { -- top upgrade first, not put mean not upgrade
-					"Fairy Spawn Amount",
-					"Loose Fairy Spawn Amount",
 					"Glimmer Multiplier",
 					"Fairy Event Duration",
+					"Fairy Spawn Amount",
+					"Loose Fairy Spawn Amount",
 				},
-				Limit = {
+		Limit = {
 					["Glimmer Multiplier"] = 5, -- max 10
 					["Loose Fairy Spawn Amount"] = 10, -- max 10
 					["Fairy Event Duration"] = 10, -- max 10
@@ -275,39 +260,51 @@ getgenv().ConfigsKaitun = {
 			}
 		},
 		MaxMoney_Restocks = 500_000_000_000,
-		Shop = { -- un comment to buy
+		Shop = { -- delete -- to buy
 			"Enchanted Chest",
 			"Pet Shard Glimmering",
 			"Enchanted Egg",
 			"Enchanted Seed Pack",
-			-- "Drake",
-
-			"Sprout Seed Pack",
+			"Skyroot Chest",
 			"Sprout Egg",
+			"Sprout Seed Pack",
 			-- "Mandrake",
-			"Silver Fertilizer",
+			--"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			["Spriggan"] = 8,
+			--["Spriggan"] = 8,
 			-- Friend Shop
-			"Skyroot Chest",
-			"Pet Shard GiantBean",
+			--"Pet Shard GiantBean",
 		},
 		["Traveling Shop"] = {
-			"Bee Egg",
-			"Paradise Egg", 
-			"Rare Summer Egg", 
-			"Common Summer Egg"
+            "Bee Egg",
+			"Bald Eagle",
+            "Cauliflower",
+            "Rafflesia",
+            "Green Apple",
+            "Avocado",
+            "Banana",
+            "Pineapple",
+            "Kiwi",
+            "Bell Pepper",
+            "Prickly Pear",
+            "Loquat",
+            "Feijoa",
+            "Pitcher Plant",
+            "Flower Seed Pack",
+			"Common Summer Egg",
+			"Rare Summer Egg",
+			"Paradise Egg"
+
 		},
 		Craft = {
-			"Sprout Egg",
-			"Anti Bee Egg",
-			"Primal Egg",
-			"Ancient Seed Pack",
 			"Enchanted Chest",
 			"Fairy Net",
 			"Enchanted Egg",
 			"Enchanted Seed Pack",
+			"Anti Bee Egg",
+			"Pet Shard GiantBean",
+			"Sprout Egg",
 		},
 		Start_Do_Honey = 100_000
 	},
@@ -333,17 +330,17 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
+			"Anti Bee Egg",
+			"Paradise Egg",
 			"Enchanted Egg",
 			"Bug Egg",
-			"Paradise Egg",
 			"Sprout Egg",
-			"Gourmet Egg",
-			"Zen Egg",
-			"Anti Bee Egg",
-			"Primal Egg",
-			"Night Egg",
-			"Dinosaur Egg",
-			"Oasis Egg",
+			--"Gourmet Egg",
+			--"Zen Egg",
+			--"Primal Egg",
+			--"Night Egg",
+			--"Dinosaur Egg",
+			--"Oasis Egg",
 			--"Mythical Egg",
 			--"Legendary Egg",
 			"Common Summer Egg",
@@ -370,24 +367,32 @@ getgenv().ConfigsKaitun = {
 		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				["Starfish"] = { 5, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
-				["Chicken"] = { 8 , 75, 2 },
+				--["Bacon Pig"] = { 8, 75, 1 },
+				["Glimmering Sprite"] = { 8, 101, 1 },
+				["Starfish"] = { 8, 75, 2 },
+				["Chicken"] = { 8 , 75, 3 },
 				["Rooster"] = { 8, 75, 3 },
 			},
-			["Limit Upgrade"] = 3, -- max is 5 (more than or lower than 1 will do nothing)
+			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				["Glimmering Sprite"] = {8, 100, 1 },
-				["Tanchozuru"] = { 5, 100, 2 }, -- 5 on the first mean equip only 5 | pet , 100 mean equip only level pet lower than 100 | the one on the last is priority it will ues first if possible 
-				["Ostrich"] = { 3, 100, 2 },
-				["Blood Kiwi"] = { 8, 100 },
-				["Seal"] = { 8, 100 },
-				["Rooster"] = { 8, 100 },
-				["Starfish"] = { 5, 75 },
+				["Glimmering Sprite"] = { 8, 101, 1 },
+				["Tarantula Hawk"] = { 2, 101, 2 },
+				--["Gorilla Chef"] = { 8, 101, 1 },
+				--["Bacon Pig"] = { 8, 101, 2 },
+				--["Tanchozuru"] = { 8, 101, 3 },
+				--["Kappa"] = { 8, 101, 4 },
+				--["Spaghetti Sloth"] = { 8, 101, 5 },
+				--["Corrupted Kodama"] = { 8, 101, 6 },
+				--["Kodama"] = { 8, 101, 7 },
+				["Blood Kiwi"] = { 8, 101, 3 },
+				["Rooster"] = { 8, 101, 4 },
+				["Sunny-Side Chicken"] = { 1, 101, 5 },
+				["Chicken"] = { 8 , 101, 6 },
+				["Starfish"] = { 8, 75, 7 },
 			},
 		},
 		Unfavorite_AllPet = true,
 		Favorite_LockedPet = false,
-		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			"Phoenix",
 			"Cockatrice",
@@ -438,9 +443,6 @@ getgenv().ConfigsKaitun = {
 			["Hotdog Daschund"] = 2,
 		},
 		LockPet_Weight = 5, -- if Weight >= 7 they will locked,
-		Ignore_Pet_Weight = {
-			"NAME oF PET THAT U DONT NEED LOCK",
-		},
 		Instant_Sell = {
 			"Grey Mouse",
 			"Squirrel",
@@ -458,6 +460,7 @@ getgenv().ConfigsKaitun = {
 			"Bacon Pig",
 			"Dairy Cow",
 			"Pancake Mole",
+			"Hotdog Daschund",
 			"Gorilla Chef",
 			"Seedling",
 			"Sushi Bear",
