@@ -420,6 +420,7 @@ getgenv().ConfigsKaitun = {
 			"Junkbot",
 			"Moth",
 			"Chicken Zombie",
+			["Luminous Sprite"] = 2,
 			["Shroomie"] = 2,
 			["Cardinal"] = 2,
 			["Glimmering Sprite"] = 8,
