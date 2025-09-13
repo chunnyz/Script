@@ -11,7 +11,8 @@ getgenv().ConfigsKaitun = {
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = false,
 	
-	["Rejoin When Update"] = false,
+	["Rejoin When Update"] = false,	
+
 	["Limit Tree"] = {
 		["Limit"] = 450,
 		["Destroy Untill"] = 450,
@@ -28,14 +29,14 @@ getgenv().ConfigsKaitun = {
 			"Princess Thorn",
 			-- for the event
 			Bamboo = 4,
-			Coconut = 4,
+			Coconut = 15,
 			Mushroom = 4,
 			Glowthorn = 4,
-			Tomato = 4,
+			Tomato = 15,
 			Pumpkin = 4,
 			Pepper = 4,
-			Cacao = 4,
-			Apple = 4,
+			Cacao = 15,
+			Apple = 15,
 			Romanesco = 4,
 			["Elder Strawberry"] = 4,
 			["Burning Bud"] = 4,
@@ -43,14 +44,14 @@ getgenv().ConfigsKaitun = {
 			Corn = 4,
 			["Sugar Apple"] = 4,
 			["Ember Lily"] = 4,
-			["Dragon Fruit"] = 4,
-			Sunbulb = 4,
+			["Dragon Fruit"] = 15,
+			Sunbulb = 8,
 			["Orange Tulip"] = 4,
-			Blueberry = 4,
+			Blueberry = 15,
 			Watermelon = 4,
-			Mango = 4,
+			Mango = 15,
 			Cactus = 4,
-			Strawberry = 4,
+			Strawberry = 15,
 			Beanstalk = 4,
 			Lightshoot = 4,
 			Grape = 4,
@@ -236,6 +237,9 @@ getgenv().ConfigsKaitun = {
 	},
 	
 		Events = {
+		["Fall Event"] = {
+			Minimum_Money = 100_000, -- minimum money to start play this event
+		},
 		["Fairy Event"] = {
 			Minimum_Money = 100_000, -- minimum money to start play this event
 			Rewards_Item = {
@@ -258,8 +262,14 @@ getgenv().ConfigsKaitun = {
 					["Fairy Spawn Amount"] = 9, -- max 9
 				}
 			}
-		},
-		MaxMoney_Restocks = 500_000_000_000,
+        },
+
+        Minimum_Fairy_Point_Restock = 10000, -- if fairy point more then this will restock
+        Catch_Fairy_Before_Restock = 51,     -- fr it 50 but to be sure i put 51
+    },
+
+    MaxMoney_Restocks = 500_000_000_000,
+
 		Shop = { -- delete -- to buy
 			"Enchanted Chest",
 			"Pet Shard Glimmering",
@@ -330,6 +340,7 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
+			"Fall Egg",
 			"Anti Bee Egg",
 			"Paradise Egg",
 			"Enchanted Egg",
@@ -394,6 +405,7 @@ getgenv().ConfigsKaitun = {
 		Unfavorite_AllPet = true,
 		Favorite_LockedPet = false,
 		Locked = {
+			"Swan",
 			"Phoenix",
 			"Cockatrice",
 			"Griffin",
@@ -420,13 +432,13 @@ getgenv().ConfigsKaitun = {
 			"Junkbot",
 			"Moth",
 			"Chicken Zombie",
-			["Luminous Sprite"] = 2,
-			["Shroomie"] = 2,
-			["Cardinal"] = 2,
+			["Robin"] = 2,
+			["Barn Owl"] = 2,
+			["Grizzly Bear"] = 2,
+			["Badger"] = 2,
 			["Glimmering Sprite"] = 8,
 			["Lemon Lion"] = 2,
 			["Green Bean"] = 2,
-			["Sunny-Side Chicken"] = 1,
 			["Ostrich"] = 3,
 			["Corrupted Kodama"] = 8,
 			["Tarantula Hawk"] = 2,
